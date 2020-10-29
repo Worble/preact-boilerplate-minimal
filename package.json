@@ -1,0 +1,31 @@
+{
+  "name": "client",
+  "version": "0.0.1",
+  "scripts": {
+    "build:dev": "webpack --config webpack.config.js --mode=development --progress",
+    "build:prod": "webpack --config webpack.config.js --mode=production --progress",
+    "serve": "webpack-dev-server --config webpack.config.js --mode=development --progress --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "preact": "^10.5.5",
+    "preact-router": "^3.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-react-jsx": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "@prefresh/babel-plugin": "^0.2.2",
+    "@prefresh/webpack": "^2.1.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^4.5.0",
+    "ts-loader": "^8.0.7",
+    "typescript": "^4.0.5",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
