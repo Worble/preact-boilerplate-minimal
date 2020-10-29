@@ -8,10 +8,6 @@ const Home = () => {
     setValue(value + 1);
   }, [value]);
 
-  useEffect(() => {
-    performRequest();
-  }, []);
-
   return (
     <Fragment>
       <h1>Home</h1>
@@ -22,15 +18,5 @@ const Home = () => {
     </Fragment>
   );
 };
-
-async function performRequest() {
-  try {
-    var result = await fetch("https://localhost:5001/api/Forum");
-    var json = await result.json();
-    console.log(json);
-  } catch (e) {
-    console.log(e);
-  }
-}
 
 export default Home;
